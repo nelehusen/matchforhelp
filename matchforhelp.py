@@ -44,14 +44,14 @@ def create_profile():
     address.append(city)
     personal_data.append(address)
     print(personal_data)
-    profile_varification()
+    profile_verification()
 
-def profile_varification():
+def profile_verification():
     answer = input("Is everything correct? ")
     if answer == "yes":
         print("Thanks!")
     elif answer == "no":
         print("Let's try again.")
-        sign_up()
+        create_profile()
     else:
         print("Please type yes or no.")
