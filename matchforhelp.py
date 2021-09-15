@@ -16,6 +16,7 @@ def log_in():
         create_profile()
     elif user_email == email and user_password != password:
         print("Incorrect password. Please try again.")
+        log_in()
     else:
         print("User not found.")
         sign_up()
